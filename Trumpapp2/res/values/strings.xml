@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Trumpapp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_start_main">StartMainActivity</string>
+    <string name="app_name1">Recruitment</string>
+    <string name="app_name2">Participation</string>
+
+  
+    
+    
+</resources>

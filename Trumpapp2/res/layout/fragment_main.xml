@@ -1,0 +1,310 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebackground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="trumpapp.com.example.MainActivity$PlaceholderFragment" >
+
+    
+
+    
+    <Button
+        android:id="@+id/shuffle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="shuffle" />
+    
+    
+    
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp" >
+         <LinearLayout
+         android:layout_width="50dp"
+       	 android:layout_height="75dp"
+       	  >
+     
+          <ImageButton
+		android:id="@+id/Hand1"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp" 
+        android:scaleType="fitXY"/>
+          
+          <ImageButton
+		android:id="@+id/Hand2"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"
+        android:scaleType="centerCrop"/>
+          
+              
+          <ImageButton
+		android:id="@+id/Hand3"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+     
+          <ImageButton
+		android:id="@+id/Hand4"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+          <ImageButton
+		android:id="@+id/Hand5"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+          <ImageButton
+		android:id="@+id/Hand6"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+              
+           <ImageButton
+		android:id="@+id/Hand7"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+     
+          <ImageButton
+		android:id="@+id/Hand8"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+          <ImageButton
+		android:id="@+id/Hand9"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+              
+           <ImageButton
+		android:id="@+id/Hand10"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+     
+          <ImageButton
+		android:id="@+id/Hand11"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+          <ImageButton
+		android:id="@+id/Hand12"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+          <ImageButton
+		android:id="@+id/Hand13"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+           
+
+          <ImageButton
+		android:id="@+id/Hand14"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+     
+          <ImageButton
+		android:id="@+id/Hand15"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+          <ImageButton
+		android:id="@+id/Hand16"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+              
+          <ImageButton
+		android:id="@+id/Hand17"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+     
+          <ImageButton
+		android:id="@+id/Hand18"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+          <ImageButton
+		android:id="@+id/Hand19"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+          <ImageButton
+		android:id="@+id/Hand20"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+              
+           <ImageButton
+		android:id="@+id/Hand21"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+     
+          <ImageButton
+		android:id="@+id/Hand22"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+          <ImageButton
+		android:id="@+id/Hand23"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+              
+           <ImageButton
+		android:id="@+id/Hand24"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+     
+          <ImageButton
+		android:id="@+id/Hand25"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+          
+          <ImageButton
+		android:id="@+id/Hand26"
+        android:layout_width="50dp"
+        android:layout_height="75dp" 
+        android:layout_marginRight="2dp"/>
+  
+        </LinearLayout>
+        </HorizontalScrollView>
+
+    
+    
+       
+    
+    
+  <!--   
+    
+      <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="170dp" >
+         <LinearLayout
+         android:layout_width="50dp"
+       	 android:layout_height="75dp"
+       	  >
+           
+          <ImageButton
+		android:id="@+id/Hand13"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+           
+
+          <ImageButton
+		android:id="@+id/Hand14"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+     
+          <ImageButton
+		android:id="@+id/Hand15"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+          
+          <ImageButton
+		android:id="@+id/Hand16"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+          
+              
+          <ImageButton
+		android:id="@+id/Hand17"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+     
+          <ImageButton
+		android:id="@+id/Hand18"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+          
+          <ImageButton
+		android:id="@+id/Hand19"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+          
+          <ImageButton
+		android:id="@+id/Hand20"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+          
+              
+           <ImageButton
+		android:id="@+id/Hand21"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+     
+          <ImageButton
+		android:id="@+id/Hand22"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+          
+          <ImageButton
+		android:id="@+id/Hand23"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+          
+              
+           <ImageButton
+		android:id="@+id/Hand24"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+     
+          <ImageButton
+		android:id="@+id/Hand25"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+          
+          <ImageButton
+		android:id="@+id/Hand26"
+        android:layout_width="50dp"
+        android:layout_height="75dp" />
+          
+  
+        </LinearLayout>
+        </HorizontalScrollView>
+             
+              -->
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shuffle"
+        android:layout_below="@+id/shuffle"
+        android:text="go title" />
+    
+</RelativeLayout>

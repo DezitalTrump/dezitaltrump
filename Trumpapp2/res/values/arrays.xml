@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="cards">           
+        <item>@drawable/c01</item>
+        <item>@drawable/c02</item>
+        <item>@drawable/c03</item>
+        <item>@drawable/c04</item>
+        <item>@drawable/c05</item>
+        <item>@drawable/c06</item>
+        <item>@drawable/c07</item>
+        <item>@drawable/c08</item>
+        <item>@drawable/c09</item>
+        <item>@drawable/c10</item>
+        <item>@drawable/c11</item>
+        <item>@drawable/c12</item>
+        <item>@drawable/c13</item>
+        
+        <item>@drawable/d01</item>
+        <item>@drawable/d02</item>
+        <item>@drawable/d03</item>
+        <item>@drawable/d04</item>
+        <item>@drawable/d05</item>
+        <item>@drawable/d06</item>
+        <item>@drawable/d07</item>
+        <item>@drawable/d08</item>
+        <item>@drawable/d09</item>
+        <item>@drawable/d10</item>
+        <item>@drawable/d11</item>
+        <item>@drawable/d12</item>
+        <item>@drawable/d13</item>
+        
+        <item>@drawable/h01</item>
+        <item>@drawable/h02</item>
+        <item>@drawable/h03</item>
+        <item>@drawable/h04</item>
+        <item>@drawable/h05</item>
+        <item>@drawable/h06</item>
+        <item>@drawable/h07</item>
+        <item>@drawable/h08</item>
+        <item>@drawable/h09</item>
+        <item>@drawable/h10</item>
+        <item>@drawable/h11</item>
+        <item>@drawable/h12</item>
+        <item>@drawable/h13</item>
+        
+        <item>@drawable/s01</item>
+        <item>@drawable/s02</item>
+        <item>@drawable/s03</item>
+        <item>@drawable/s04</item>
+        <item>@drawable/s05</item>
+        <item>@drawable/s06</item>
+        <item>@drawable/s07</item>
+        <item>@drawable/s08</item>
+        <item>@drawable/s09</item>
+        <item>@drawable/s10</item>
+        <item>@drawable/s11</item>
+        <item>@drawable/s12</item>
+        <item>@drawable/s13</item>
+    </array>
+</resources>
