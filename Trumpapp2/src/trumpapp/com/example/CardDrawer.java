@@ -18,13 +18,15 @@ public class CardDrawer{
 	}
 	public void handReset() //手札の初期化
 	{
-		for(int i=0;i<DECK;i++){Hand[i] = 0;}
+		for(int i=0;i<DECK;i++){Hand[i] = 55;}
 	}
 	public void fieldReset() //捨て札の初期化
 	{
-		for(int i=0;i<DECK;i++){Field[i] = 0;}
+		for(int i=0;i<DECK;i++){Field[i] = 55;}
 	}
-	
+	public boolean Handchecker(int id){
+		return Hand[id]!= 55;
+	}
 	
 //	TypedArray cardsArray = getResources().obtainTypedArray(R.array.cards);
 	
@@ -67,6 +69,35 @@ public class CardDrawer{
 		Hand[id] = id;
 		Field[id] = 0;
 	}
+	
+	//カードを山札に戻す
+	public void cardReturn(int id)
+	{
+		deck[id] = 1;
+		Hand[id] = 0;
+	}
+	
+	//山札の同期
+	public void deckSynchro(int id)
+	{
+		if(deck[id] == 1){
+			deck[id] = 0;
+		}else if(deck[id] == 0){
+			deck[id]=1;
+		}else {}
+			
+	}
+
+	//捨て札の同期
+	public void FieldSynchro(int id)
+	{
+		if(Field[id] != id){
+			Field[id] = id;
+		}else {}
+			
+	}
+	
+	
 	
 	//並べ替え
 	public void handSwap()

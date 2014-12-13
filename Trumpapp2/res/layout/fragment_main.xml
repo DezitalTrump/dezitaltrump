@@ -9,30 +9,28 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="trumpapp.com.example.MainActivity$PlaceholderFragment" >
 
-    
-
-    
     <Button
         android:id="@+id/shuffle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="shuffle" />
-    
-    
-    
+
     <HorizontalScrollView
-        android:id="@+id/horizontalScrollView1"
+        android:id="@+id/HandScroll"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="2dp" >
-         <LinearLayout
-         android:layout_width="50dp"
-       	 android:layout_height="75dp"
-       	  >
-     
-          <ImageButton
+
+        <LinearLayout
+            android:id="@+id/HandList"
+            android:layout_width="50dp"
+            android:layout_height="75dp"
+            android:orientation="horizontal" >
+
+            <!--
+        <ImageButton
 		android:id="@+id/Hand1"
         android:layout_width="50dp"
         android:layout_height="75dp" 
@@ -196,17 +194,11 @@
         android:layout_width="50dp"
         android:layout_height="75dp" 
         android:layout_marginRight="2dp"/>
-  
+            -->
         </LinearLayout>
-        </HorizontalScrollView>
+    </HorizontalScrollView>
 
-    
-    
-       
-    
-    
-  <!--   
-    
+    <!--
       <HorizontalScrollView
         android:id="@+id/horizontalScrollView2"
         android:layout_width="fill_parent"
@@ -296,8 +288,7 @@
   
         </LinearLayout>
         </HorizontalScrollView>
-             
-              -->
+    -->
 
     <Button
         android:id="@+id/button2"
@@ -306,5 +297,5 @@
         android:layout_alignLeft="@+id/shuffle"
         android:layout_below="@+id/shuffle"
         android:text="go title" />
-    
+
 </RelativeLayout>
