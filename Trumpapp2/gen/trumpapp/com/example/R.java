@@ -1140,6 +1140,7 @@ containing a value of this type.
         public static final int z02=0x7f020090;
     }
     public static final class id {
+        public static final int FieldList=0x7f050077;
         public static final int Hand1=0x7f05001a;
         public static final int Hand10=0x7f050023;
         public static final int Hand11=0x7f050024;
@@ -1194,8 +1195,8 @@ containing a value of this type.
         public static final int Hand7=0x7f050020;
         public static final int Hand8=0x7f050021;
         public static final int Hand9=0x7f050022;
-        public static final int HandList=0x7f050075;
-        public static final int HandScroll=0x7f050074;
+        public static final int HandList=0x7f050074;
+        public static final int HandScroll=0x7f050073;
         public static final int action_bar=0x7f050052;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f050051;
@@ -1207,16 +1208,15 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f05005a;
-        public static final int action_settings=0x7f05007f;
+        public static final int action_settings=0x7f050080;
         public static final int activity_chooser_view_content=0x7f05005b;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
-        public static final int button=0x7f05007b;
-        public static final int button1=0x7f05007c;
-        public static final int button2=0x7f050076;
-        public static final int button3=0x7f050079;
-        public static final int button4=0x7f05007a;
-        public static final int button5=0x7f050077;
+        public static final int button=0x7f05007c;
+        public static final int button1=0x7f05007d;
+        public static final int button3=0x7f05007a;
+        public static final int button4=0x7f05007b;
+        public static final int button5=0x7f050078;
         public static final int checkbox=0x7f050063;
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f050072;
@@ -1224,7 +1224,7 @@ containing a value of this type.
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
         public static final int dropdown=0x7f05000f;
-        public static final int editText1=0x7f05007e;
+        public static final int editText1=0x7f05007f;
         public static final int edit_query=0x7f050066;
         public static final int end=0x7f050013;
         public static final int expand_activities_button=0x7f05005c;
@@ -1240,6 +1240,7 @@ containing a value of this type.
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
+        public static final int oneDraw=0x7f050076;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
         public static final int radio=0x7f050065;
@@ -1257,12 +1258,12 @@ containing a value of this type.
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
         public static final int showTitle=0x7f050006;
-        public static final int shuffle=0x7f050073;
+        public static final int shuffle=0x7f050075;
         public static final int split_action_bar=0x7f050054;
         public static final int submit_area=0x7f05006f;
         public static final int tabMode=0x7f050002;
-        public static final int textView1=0x7f05007d;
-        public static final int textView2=0x7f050078;
+        public static final int textView1=0x7f05007e;
+        public static final int textView2=0x7f050079;
         public static final int title=0x7f050061;
         public static final int top_action_bar=0x7f050056;
         public static final int up=0x7f050057;
