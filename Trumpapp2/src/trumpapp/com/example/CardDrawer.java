@@ -6,6 +6,7 @@ public class CardDrawer {
 
 	public int cardID = 0;
 	public int index, Swapindex = 55;
+	int FieldCount = 0;
 
 	public static final int DECK = 52;
 	public int deck[] = new int[DECK]; // 山札のindex
@@ -85,18 +86,13 @@ public class CardDrawer {
 
 	// カードを場に出す
 	public void cardThrow(int index,int id) {
-		Field[id] = id;
-		Hand[id] = 55;
-		for(int i=id;i<DECK-1;i++){
-			Hand[i] = Hand[i+1];
+		Field[FieldCount] = id;
+		for (int i = index; i < DECK - 1; i++) {
+			Hand[i] = Hand[i + 1];
 		}
-		for(int i=0;i<DECK-1;i++){
-			for(int j=i+1;j<DECK-2;j++){
-				if(Hand[i]==Hand[j]){
-					Hand[j] = 55;
-				}
-			}
-		}
+		Hand[DECK-1] = 55;
+		FieldCount++;
+
 	}
 
 	// 場からカードをとる
