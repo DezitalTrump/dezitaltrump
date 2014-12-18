@@ -91,7 +91,6 @@ public class MainActivity extends ActionBarActivity {
 				while (Hand[index].getId() != v.getId()) { // タップされた手札の位置記録
 					index++;
 				}
-				Log.d("djaslkf;ja", "fahskdl;jf");
 				if (index != mCardDrawer.Swapindex
 						&& mCardDrawer.Swapindex != 55) {// 2回目のタップ（違うカード)
 					ViewSwap(index);
@@ -99,8 +98,7 @@ public class MainActivity extends ActionBarActivity {
 					mCardDrawer.Swapindex = 55;
 				} else if (index == mCardDrawer.Swapindex) {
 					mCardDrawer.cardThrow(index,mCardDrawer.Hand[index]);
-					System.out.println(mCardDrawer.Hand[index]);
-					cardServe(mCardDrawer.Field[mCardDrawer.FieldCount-1]);
+					cardServe(index);
 					cardIDset(index);
 					// for(int i=0;Hand[i]!=null;i++)
 					// Log.d("AFTERdeleteID " + Hand[i].getId(),
@@ -111,9 +109,9 @@ public class MainActivity extends ActionBarActivity {
 					Log.d("firstTAP " + index, "success");
 					v.setBackgroundColor(Color.rgb(0, 0, 255));
 					mCardDrawer.Swapindex = index; // 選択した場所記録
-					// for (int i = 0; Hand[i] != null; i++)
-					// Log.d("AFTERdeleteID " + Hand[i].getId(),
-					// "cardsIDarray " + cardsIDarray[i]);
+					for (int i = 0; Hand[i] != null; i++)
+						Log.d("AFTERdeleteID " + Hand[i].getId(),
+								"cardsIDarray " + cardsIDarray[i]);
 
 				}
 			}
@@ -160,34 +158,43 @@ public class MainActivity extends ActionBarActivity {
 									new LinearLayout.LayoutParams(80, 120)); // 手札のボタン追加
 							Hand[i].setOnClickListener(HandOnClickListener);
 							v.setVisibility(View.GONE);
-							//oneDraw.setVisibility(View.VISIBLE);
+							oneDraw.setVisibility(View.VISIBLE);
 						}
 					}
 				}
 			});
 
 			// 1枚カードを引く
-			/*
-			 * oneDraw.setOnClickListener(new OnClickListener() {
-			 * 
-			 * @Override public void onClick(View v) { int endid = 0; while
-			 * (Hand[endid] != null && endid < 51) { // 手札の末尾のindex endid++; }
-			 * if (endid < 52) { mCardDrawer.cardOneDraw(endid); Log.d("endid "
-			 * + endid, "sssss "); TypedArray cardImageArray = getResources()
-			 * .obtainTypedArray(R.array.cards); Hand[endid] = new
-			 * ImageButton(getActivity()); Hand[endid]
-			 * .setId(cardsIDarray[mCardDrawer.Hand[endid]]);// idの割り当て
-			 * Hand[endid].setScaleType(ImageButton.ScaleType.FIT_XY);// 画像表示形式
-			 * Hand[endid].setPadding(10, 10, 10, 10);
-			 * Hand[endid].setBackgroundColor(Color.TRANSPARENT); Drawable
-			 * drawable = cardImageArray .getDrawable(mCardDrawer.Hand[endid]);
-			 * // 対応した画像のセット Hand[endid].setImageDrawable(drawable);
-			 * HandList.addView(Hand[endid], endid, new
-			 * LinearLayout.LayoutParams(80, 120)); // 手札のボタン追加
-			 * Hand[endid].setOnClickListener(HandOnClickListener); } else { } }
-			 * 
-			 * });
-			 */
+			/*oneDraw.setOnClickListener(new OnClickListener() {
+
+				@Override
+				public void onClick(View v) {
+					int endid = 0;
+					while (Hand[endid] != null && endid < 51) { // 手札の末尾のindex
+						endid++;
+					}
+					if (endid < 52) {
+						mCardDrawer.cardOneDraw(endid);
+						Log.d("endid " + endid, "sssss ");
+						TypedArray cardImageArray = getResources()
+								.obtainTypedArray(R.array.cards);
+						Hand[endid] = new ImageButton(getActivity());
+						Hand[endid]
+								.setId(cardsIDarray[mCardDrawer.Hand[endid]]);// idの割り当て
+						Hand[endid].setScaleType(ImageButton.ScaleType.FIT_XY);// 画像表示形式
+						Hand[endid].setPadding(10, 10, 10, 10);
+						Hand[endid].setBackgroundColor(Color.TRANSPARENT);
+						Drawable drawable = cardImageArray
+								.getDrawable(mCardDrawer.Hand[endid]); // 対応した画像のセット
+						Hand[endid].setImageDrawable(drawable);
+						HandList.addView(Hand[endid], endid,
+								new LinearLayout.LayoutParams(80, 120)); // 手札のボタン追加
+						Hand[endid].setOnClickListener(HandOnClickListener);
+					} else {
+					}
+				}
+
+			});*/
 
 			return rootView;
 		}
@@ -214,26 +221,22 @@ public class MainActivity extends ActionBarActivity {
 		}
 
 		// カードを出す
-		public void cardServe(int id) {
+		public void cardServe(int index) {
 			FieldList.removeAllViews();
 			TypedArray cardImageArray = getResources().obtainTypedArray(
 					R.array.cards);
-			Log.d("index " + id, "Field[id] "+mCardDrawer.Field[id]);
-			Field[mCardDrawer.FieldCount] = new ImageButton(getActivity());
-
-			System.out.println(mCardDrawer.Field[id]);
-
-			Field[mCardDrawer.FieldCount].setId(cardsIDarray[id]);
-			// idの割り当て
-			Field[mCardDrawer.FieldCount].setScaleType(ImageButton.ScaleType.FIT_XY);// 画像表示形式
-			Field[mCardDrawer.FieldCount].setPadding(10, 10, 10, 10);
-			Field[mCardDrawer.FieldCount].setBackgroundColor(Color.TRANSPARENT);
+			Log.d("index " + index, "Field[index] "+mCardDrawer.Field[index]);
+			Field[index] = new ImageButton(getActivity());
+			Field[index].setId(cardsIDarray[mCardDrawer.Field[index]]);// idの割り当て
+			Field[index].setScaleType(ImageButton.ScaleType.FIT_XY);// 画像表示形式
+			Field[index].setPadding(10, 10, 10, 10);
+			Field[index].setBackgroundColor(Color.TRANSPARENT);
 			Drawable drawable = cardImageArray
-					.getDrawable(id); // 対応した画像のセット
-			Field[mCardDrawer.FieldCount].setImageDrawable(drawable);
-			FieldList.addView(Field[mCardDrawer.FieldCount], 0, new LinearLayout.LayoutParams(80,
-					120)); // 手札のボタン追加
-			// Hand[index].setOnClickListener(HandOnClickListener);
+					.getDrawable(mCardDrawer.Field[index]); // 対応した画像のセット
+			Field[index].setImageDrawable(drawable);
+			FieldList.addView(Field[index], 0, new LinearLayout.LayoutParams(
+					80, 120)); // 手札のボタン追加
+//			Hand[index].setOnClickListener(HandOnClickListener);
 
 		}
 
@@ -241,7 +244,6 @@ public class MainActivity extends ActionBarActivity {
 			HandList.removeAllViews();
 			TypedArray cardImageArray = getResources().obtainTypedArray(
 					R.array.cards);
-			Log.d("mCardDrawer.Hand[index] " + mCardDrawer.Hand[index],"delete");
 			for (int i = 0; i < 52; i++) {
 				if (mCardDrawer.Handchecker(i)) {
 					Hand[i] = new ImageButton(getActivity());
